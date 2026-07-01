@@ -1,0 +1,78 @@
+/* Reset & Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #7c3004;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Utama */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: #ff5e00;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+h2, .subtitle { text-align: center; }
+h2 { color: #ffffff; text-transform: uppercase; letter-spacing: 1px; font-size: 24px; }
+.subtitle { color: #ffffff; margin-bottom: 30px; font-size: 14px; }
+
+/* Layout Grid 2 Kolom murni */
+.grid-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group { display: flex; flex-direction: column; }
+label { margin-bottom: 6px; font-weight: 600; color: #fff6f6; font-size: 14px; }
+
+/* Input & Select */
+input, select {
+    padding: 11px 14px;
+    background: #1a202c;
+    border: 1px solid #4a5568;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+    border-color: #319795;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(49, 151, 149, 0.2);
+}
+
+/* Tombol Submit Full Width di Bawah Grid */
+.btn-container {
+    margin-top: 10px;
+}
+.btn-submit {
+    background-color: #692805;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+.btn-submit:hover { background-color: #e40000; }
+
+/* Responsif Layar HP (Otomatis Menjadi 1 Kolom) */
